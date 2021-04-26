@@ -1,0 +1,51 @@
+.LoginView{
+  width: 100%;
+  height: 100%;
+  background: $Gradient-Primary;
+  .l-contain{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__Title{
+    font-size: 60px;
+    color: $Light;
+    text-shadow: -4px 4px 4px rgba(0,0,0,.25);
+  }
+  &__Form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 23px;
+    width: 100%;
+    max-width: 400px;
+  }
+  &__Input{
+    height: 60px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+  }
+  &__Submit{
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    background: $Dark;
+    color: $Light !important;
+    border: none;
+    font-size: 24px;
+    display: block;
+    margin: 0 auto;
+    &:hover{
+      background: $Dark-Hover;
+    }
+  }
+  &__Link{
+    font-weight: 700;
+    color: $Light;
+    text-shadow: -4px 4px 4px rgba(0,0,0,.25);
+    margin-top: 23px;
+  }
+}
